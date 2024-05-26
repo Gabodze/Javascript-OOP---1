@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class myObject {
+            name = "";
+            lastname = "";
+            age = "";
+
+            set_name(){
+                this.name = "Mariam";
+            }
+            set_lastname (){
+                this.lastname = "Gabodze";
+            }
+            set_age (){
+                this.age = 27;
+            }
+            get_name(){
+                console.log(this.name);
+            }
+            get_lastname(){
+                console.log(this.lastname);
+            }
+            get_age(){
+                console.log(this.age);
+            }
+        }
+        var object = new myObject();
+        object.set_name();
+        object.set_lastname();
+        object.set_age();
+        document.write(object.name + " " + object.lastname + "<br>" + object.age)
+    </script>
+</body>
+</html>
